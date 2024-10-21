@@ -8,9 +8,7 @@ NC='\033[0m'
 yarn test:ci
 yarn lint
 yarn check:types
-
-# Audit script, exits on high or above vulnerabilities
-/bin/bash -c 'yarn audit; [[ $? -ge 8 ]] && exit 1 || exit 0'
+yarn check:audit
 
 # Branch prefix validation
 branch_name=$(git rev-parse --abbrev-ref HEAD)

@@ -11,6 +11,7 @@
     "adb:reverse:debug": "adb reverse tcp:8081 tcp:8081",
     "android": "react-native run-android",
     "android:release": "yarn android --mode release",
+    "check:audit": "yarn npm audit --severity high",
     "check:types": "tsc --noEmit",
     "ios": "react-native run-ios",
     "ios:pods": "cd ios && pod install && cd ..",
