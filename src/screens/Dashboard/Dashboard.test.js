@@ -1,6 +1,6 @@
-import { NavigationContext } from '@react-navigation/native';
-import { cleanup, fireEvent, render } from '@testing-library/react-native';
-import { ScreenNames } from '@types';
+import {NavigationContext} from '@react-navigation/native';
+import {cleanup, fireEvent, render} from '@testing-library/react-native';
+import {ScreenNames} from '@types';
 import * as NavModule from '@utils/navigation';
 import React from 'react';
 
@@ -32,12 +32,12 @@ describe('Dashboard screen', () => {
     });
 
     it('should render correctly', () => {
-      const { toJSON } = renderedComponent;
+      const {toJSON} = renderedComponent;
       expect(toJSON()).toMatchSnapshot();
     });
 
     it('should navigate to dashboard page when touchable highlight is selected', () => {
-      const { getByTestId } = renderedComponent;
+      const {getByTestId} = renderedComponent;
       fireEvent.press(getByTestId('DashboardNavigationButton'));
       expect(NavModule.navigate).toHaveBeenCalledWith(ScreenNames.SECONDARY);
     });

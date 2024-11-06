@@ -1,5 +1,5 @@
-import { ScreenNames } from './enums';
-import { Translation } from './interfaces';
+import {ScreenNames} from './enums';
+import {Translation} from './interfaces';
 
 export type SupportedLocale = 'en' | 'de';
 

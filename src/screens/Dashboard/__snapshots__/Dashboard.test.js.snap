@@ -52,7 +52,9 @@ exports[`Dashboard screen given default props should render correctly 1`] = `
             "textAlign": "center",
           }
         }
-      />
+      >
+        Dashboard - tap to navigate
+      </Text>
     </View>
   </View>
 </View>

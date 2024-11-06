@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react-native';
+import {render} from '@testing-library/react-native';
 import React from 'react';
 
 import Example from './Example';
@@ -12,7 +12,7 @@ describe('Example component', () => {
     });
 
     it('should render correctly', () => {
-      const { toJSON } = renderedComponent;
+      const {toJSON} = renderedComponent;
       expect(toJSON()).toMatchSnapshot();
     });
   });

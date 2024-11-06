@@ -1,4 +1,4 @@
-import { ScreenNames } from './enums';
+import {ScreenNames} from './enums';
 
 export interface TranslationsMapping {
   [ScreenNames.DASHBOARD]: {

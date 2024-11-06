@@ -1,13 +1,12 @@
-import { Example } from '@components';
-import { useFocusEffect } from '@react-navigation/native';
-import { ScreenNames } from '@types';
-import { logger } from '@utils/logger';
-import { navigate } from '@utils/navigation';
-import i18n from 'i18next';
+import {Example} from '@components';
+import {useFocusEffect} from '@react-navigation/native';
+import {ScreenNames} from '@types';
+import {logger} from '@utils/logger';
+import {navigate} from '@utils/navigation';
 import React from 'react';
-import { TouchableHighlight, View } from 'react-native';
+import {TouchableHighlight, View} from 'react-native';
 
-import { DashboardViewStyles } from './Dashboard.styles';
+import {DashboardViewStyles} from './Dashboard.styles';
 
 const Render = () => {
   useFocusEffect(() => {
@@ -22,7 +21,7 @@ const Render = () => {
         <Example
           wrapperColor="#007d79"
           labelColor="#FFF"
-          label={i18n.t('Dashboard.description')}
+          label={'Dashboard - tap to navigate'}
         />
       </TouchableHighlight>
     </View>

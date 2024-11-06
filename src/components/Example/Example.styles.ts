@@ -1,5 +1,5 @@
-import { s, vs } from '@utils/scale';
-import { StyleSheet } from 'react-native';
+import {s, vs} from '@utils/scale';
+import {StyleSheet} from 'react-native';
 
 export const Wrapper = (color: string) =>
   StyleSheet.create({

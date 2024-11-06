@@ -1,13 +1,13 @@
-import { SafeArea } from '@components';
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import Screens from '@screens';
-import { applyStateListeners } from '@utils/activity';
-import { applyDeepLinkListener, checkUniversalLinkState } from '@utils/linking';
-import { applyBackHandleListener, navigation } from '@utils/navigation';
-import React, { useEffect } from 'react';
-import { StatusBar } from 'react-native';
+import {applyStateListeners} from '@utils/activity';
+import {applyDeepLinkListener, checkUniversalLinkState} from '@utils/linking';
+import {applyBackHandleListener, navigation} from '@utils/navigation';
+import React, {useEffect} from 'react';
+import {StatusBar} from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
-import { enableScreens } from 'react-native-screens';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {enableScreens} from 'react-native-screens';
 
 // Optimize memory usage and performance by using the native navigation component (UIViewController for iOS, and FragmentActivity for Android)
 enableScreens();
@@ -19,7 +19,7 @@ const App = () => {
     const linkingListener = applyDeepLinkListener();
     const backListener = applyBackHandleListener();
     checkUniversalLinkState();
-    RNBootSplash.hide({ fade: true });
+    RNBootSplash.hide({fade: true});
     return () => {
       linkingListener.remove();
       appStateListener.remove();
@@ -28,14 +28,12 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <SafeAreaProvider>
       <StatusBar barStyle="dark-content" backgroundColor="#FFF" />
-      <SafeArea>
-        <NavigationContainer ref={navigation}>
-          <Screens />
-        </NavigationContainer>
-      </SafeArea>
-    </>
+      <NavigationContainer ref={navigation}>
+        <Screens />
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 };
 

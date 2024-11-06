@@ -1,5 +1,5 @@
-import { cleanup, fireEvent, render } from '@testing-library/react-native';
-import { ScreenNames } from '@types';
+import {cleanup, fireEvent, render} from '@testing-library/react-native';
+import {ScreenNames} from '@types';
 import * as NavModule from '@utils/navigation';
 import React from 'react';
 
@@ -22,12 +22,12 @@ describe('Secondary screen', () => {
     });
 
     it('should render correctly', () => {
-      const { toJSON } = renderedComponent;
+      const {toJSON} = renderedComponent;
       expect(toJSON()).toMatchSnapshot();
     });
 
     it('should navigate to dashboard page when touchable highlight is selected', () => {
-      const { getByTestId } = renderedComponent;
+      const {getByTestId} = renderedComponent;
       fireEvent.press(getByTestId('SecondaryNavigationButton'));
       expect(NavModule.navigate).toHaveBeenCalledWith(
         ScreenNames.DASHBOARD,

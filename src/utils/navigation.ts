@@ -3,8 +3,8 @@ import {
   createNavigationContainerRef,
   NavigationContainerRefWithCurrent,
 } from '@react-navigation/native';
-import { RootStackParamList, ScreenNames } from '@types';
-import { BackHandler } from 'react-native';
+import {RootStackParamList, ScreenNames} from '@types';
+import {BackHandler} from 'react-native';
 
 export const navigation: NavigationContainerRefWithCurrent<RootStackParamList> =
   createNavigationContainerRef();
@@ -18,7 +18,7 @@ export const navigate = (
   if (resetStack) {
     return navigation.reset({
       index: 0,
-      routes: [{ name: screenName, params }],
+      routes: [{name: screenName, params}],
     });
   }
   return navigation.dispatch(

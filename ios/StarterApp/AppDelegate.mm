@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import "RNBootSplash.h" // Bootsplash
+#import "RNBootSplash.h" // RN BootSplash
 
 #import <React/RCTBundleURLProvider.h>
 
@@ -29,17 +29,9 @@
 #endif
 }
 
-// Bootsplash
-- (UIView *)createRootViewWithBridge:(RCTBridge *)bridge
-                          moduleName:(NSString *)moduleName
-                           initProps:(NSDictionary *)initProps {
-  UIView *rootView = [super createRootViewWithBridge:bridge
-                                          moduleName:moduleName
-                                           initProps:initProps];
-
-  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView]; // ⬅️ initialize the splash screen
-
-  return rootView;
+- (void)customizeRootView:(RCTRootView *)rootView {
+  [super customizeRootView:rootView];
+  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView]; // initialize the splash screen
 }
 
 @end

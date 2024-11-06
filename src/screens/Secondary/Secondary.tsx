@@ -1,11 +1,10 @@
-import { Example } from '@components';
-import { ScreenNames } from '@types';
-import { navigate } from '@utils/navigation';
-import i18n from 'i18next';
+import {Example} from '@components';
+import {ScreenNames} from '@types';
+import {navigate} from '@utils/navigation';
 import React from 'react';
-import { TouchableHighlight, View } from 'react-native';
+import {TouchableHighlight, View} from 'react-native';
 
-import { SecondaryViewStyles } from './Secondary.styles';
+import {SecondaryViewStyles} from './Secondary.styles';
 
 const Render = () => (
   <View style={SecondaryViewStyles}>
@@ -15,7 +14,7 @@ const Render = () => (
       <Example
         wrapperColor="#0f62fe"
         labelColor="#FFF"
-        label={i18n.t('Secondary.description')}
+        label={'Secondary - tap to navigate'}
       />
     </TouchableHighlight>
   </View>

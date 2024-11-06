@@ -1,6 +1,6 @@
-import { AppState, AppStateStatus } from 'react-native';
+import {AppState, AppStateStatus} from 'react-native';
 
-import { logger } from './logger';
+import {logger} from './logger';
 
 // Handles listener actions for device state changes
 // Define state change actions here
