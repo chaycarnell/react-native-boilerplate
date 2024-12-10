@@ -1,4 +1,4 @@
 #!/bin/sh
 
 yarn prettier:write
-yarn sort:package
+yarn sort
