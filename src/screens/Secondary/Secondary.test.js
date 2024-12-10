@@ -1,6 +1,6 @@
 import {cleanup, fireEvent, render} from '@testing-library/react-native';
-import {ScreenNames} from '@types';
-import * as NavModule from '@utils/navigation';
+import {ScreenNames} from '@src/types';
+import * as NavModule from '@src/utils/navigation';
 import React from 'react';
 
 import AuthScreen from './Secondary';

@@ -3,11 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@components": ["components/index"],
-      "@screens": ["screens/index"],
-      "@translations": ["translations/index"],
-      "@types": ["types/index"],
-      "@utils/*": ["utils/*"]
+      "@src/*": ["./*"]
     }
   }
 }

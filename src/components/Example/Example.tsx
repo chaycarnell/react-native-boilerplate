@@ -14,8 +14,8 @@ const Render = ({
   labelColor = '#FFF',
   label = '',
 }: Props) => (
-  <View style={Wrapper(wrapperColor).style}>
-    <Text style={Label(labelColor).style}>{label}</Text>
+  <View style={Wrapper(wrapperColor)}>
+    <Text style={Label(labelColor)}>{label}</Text>
   </View>
 );
 

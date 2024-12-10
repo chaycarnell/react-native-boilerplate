@@ -1,5 +1,5 @@
 import {createStackNavigator} from '@react-navigation/stack';
-import {ScreenNames} from '@types';
+import {ScreenNames} from '@src/types';
 import React from 'react';
 
 import DashboardScreen from './Dashboard/Dashboard';

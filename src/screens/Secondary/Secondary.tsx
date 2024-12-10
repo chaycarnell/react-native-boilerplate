@@ -1,6 +1,6 @@
-import {Example} from '@components';
-import {ScreenNames} from '@types';
-import {navigate} from '@utils/navigation';
+import {Example} from '@src/components';
+import {ScreenNames} from '@src/types';
+import {navigate} from '@src/utils/navigation';
 import React from 'react';
 import {TouchableHighlight, View} from 'react-native';
 

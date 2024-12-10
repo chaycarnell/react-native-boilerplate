@@ -1,8 +1,11 @@
 import {NavigationContainer} from '@react-navigation/native';
-import Screens from '@screens';
-import {applyStateListeners} from '@utils/activity';
-import {applyDeepLinkListener, checkUniversalLinkState} from '@utils/linking';
-import {applyBackHandleListener, navigation} from '@utils/navigation';
+import Screens from '@src/screens';
+import {applyStateListeners} from '@src/utils/activity';
+import {
+  applyDeepLinkListener,
+  checkUniversalLinkState,
+} from '@src/utils/linking';
+import {applyBackHandleListener, navigation} from '@src/utils/navigation';
 import React, {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
