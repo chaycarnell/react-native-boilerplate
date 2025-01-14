@@ -32,25 +32,35 @@ exports[`Dashboard screen given default props should render correctly 1`] = `
   >
     <View
       style={
-        {
-          "alignSelf": "center",
-          "backgroundColor": "#007d79",
-          "display": "flex",
-          "height": 667,
-          "justifyContent": "center",
-          "opacity": 1,
-          "width": 750,
-        }
+        [
+          {
+            "alignSelf": "center",
+            "display": "flex",
+            "height": 812,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 750,
+          },
+          {
+            "backgroundColor": "#007d79",
+          },
+          undefined,
+        ]
       }
     >
       <Text
         style={
-          {
-            "color": "#FFF",
-            "fontSize": 24,
-            "fontWeight": "bold",
-            "textAlign": "center",
-          }
+          [
+            {
+              "fontSize": 24,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            },
+            {
+              "color": "#FFF",
+            },
+            undefined,
+          ]
         }
       >
         Dashboard - tap to navigate
