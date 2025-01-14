@@ -1,19 +1,18 @@
-import {s, vs} from '@src/utils/scale';
-import {StyleProp, TextStyle, ViewStyle} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {s} from '@src/utils/scale';
 
-export const Wrapper = (color: string): StyleProp<ViewStyle> => ({
-  height: vs(406),
-  width: s(375),
-  backgroundColor: color,
-  opacity: 1,
-  display: 'flex',
-  justifyContent: 'center',
-  alignSelf: 'center',
-});
-
-export const Label = (color: string): StyleProp<TextStyle> => ({
-  fontSize: 24,
-  fontWeight: 'bold',
-  textAlign: 'center',
-  color,
+export const styles = StyleSheet.create({
+  wrapper: {
+    height: s(406),
+    width: s(375),
+    opacity: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center',
+  },
+  label: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
 });

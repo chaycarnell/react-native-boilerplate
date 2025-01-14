@@ -1,7 +1,9 @@
-import {StyleProp, ViewStyle} from 'react-native';
+import {StyleSheet} from 'react-native';
 
-export const DashboardViewStyles: StyleProp<ViewStyle> = {
-  flex: 1,
-  alignItems: 'center',
-  justifyContent: 'center',
-};
+export const styles = StyleSheet.create({
+  wrapper: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

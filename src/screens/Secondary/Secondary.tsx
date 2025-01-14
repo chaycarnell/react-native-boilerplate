@@ -4,10 +4,10 @@ import {navigate} from '@src/utils/navigation';
 import React from 'react';
 import {TouchableHighlight, View} from 'react-native';
 
-import {SecondaryViewStyles} from './Secondary.styles';
+import {styles} from './Secondary.styles';
 
 const Render = () => (
-  <View style={SecondaryViewStyles}>
+  <View style={styles.wrapper}>
     <TouchableHighlight
       testID="SecondaryNavigationButton"
       onPress={() => navigate(ScreenNames.DASHBOARD, {})}>

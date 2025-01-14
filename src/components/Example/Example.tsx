@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 
-import {Label, Wrapper} from './Example.styles';
+import {styles} from './Example.styles';
 
 interface Props {
   wrapperColor?: string;
@@ -14,8 +14,8 @@ const Render = ({
   labelColor = '#FFF',
   label = '',
 }: Props) => (
-  <View style={Wrapper(wrapperColor)}>
-    <Text style={Label(labelColor)}>{label}</Text>
+  <View style={[styles.wrapper, {backgroundColor: wrapperColor}]}>
+    <Text style={[styles.label, {color: labelColor}]}>{label}</Text>
   </View>
 );
 

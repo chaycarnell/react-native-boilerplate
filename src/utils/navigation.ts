@@ -3,7 +3,7 @@ import {
   createNavigationContainerRef,
   NavigationContainerRefWithCurrent,
 } from '@react-navigation/native';
-import {RootStackParamList, ScreenNames} from '@types';
+import {RootStackParamList, ScreenNames} from '@src/types';
 import {BackHandler} from 'react-native';
 
 export const navigation: NavigationContainerRefWithCurrent<RootStackParamList> =

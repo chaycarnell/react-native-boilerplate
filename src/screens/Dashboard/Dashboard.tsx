@@ -6,7 +6,7 @@ import {navigate} from '@src/utils/navigation';
 import React from 'react';
 import {TouchableHighlight, View} from 'react-native';
 
-import {DashboardViewStyles} from './Dashboard.styles';
+import {styles} from './Dashboard.styles';
 
 const Render = () => {
   useFocusEffect(() => {
@@ -14,7 +14,7 @@ const Render = () => {
   });
 
   return (
-    <View style={DashboardViewStyles}>
+    <View style={styles.wrapper}>
       <TouchableHighlight
         testID="DashboardNavigationButton"
         onPress={() => navigate(ScreenNames.SECONDARY)}>
