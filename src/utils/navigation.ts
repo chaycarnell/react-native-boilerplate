@@ -3,7 +3,7 @@ import {
   createNavigationContainerRef,
   NavigationContainerRefWithCurrent,
 } from '@react-navigation/native';
-import {RootStackParamList, ScreenNames} from '@src/types';
+import {RootStackParamList, ScreenName} from '@src/types';
 import {BackHandler} from 'react-native';
 
 export const navigation: NavigationContainerRefWithCurrent<RootStackParamList> =
@@ -11,8 +11,8 @@ export const navigation: NavigationContainerRefWithCurrent<RootStackParamList> =
 
 // Custom navigate handler allowing stack to be reset in props
 export const navigate = (
-  screenName: ScreenNames,
-  params?: RootStackParamList[ScreenNames],
+  screenName: ScreenName,
+  params?: RootStackParamList[ScreenName],
   resetStack = false,
 ) => {
   if (resetStack) {
