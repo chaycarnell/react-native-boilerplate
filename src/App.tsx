@@ -10,10 +10,6 @@ import React, {useEffect} from 'react';
 import {StatusBar} from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {enableScreens} from 'react-native-screens';
-
-// Optimize memory usage and performance by using the native navigation component (UIViewController for iOS, and FragmentActivity for Android)
-enableScreens();
 
 const App = () => {
   // Handle on app launch handlers here
@@ -32,7 +28,7 @@ const App = () => {
 
   return (
     <SafeAreaProvider>
-      <StatusBar barStyle="dark-content" backgroundColor="#FFF" />
+      <StatusBar barStyle="default" backgroundColor="#FFF" />
       <NavigationContainer ref={navigation}>
         <Screens />
       </NavigationContainer>
