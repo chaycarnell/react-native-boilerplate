@@ -1,4 +1,4 @@
-export const ScreenNames = Object.freeze({
-  DASHBOARD: 'Dashboard',
-  SECONDARY: 'Secondary',
-});
+export enum ScreenNames {
+  DASHBOARD = 'Dashboard',
+  SECONDARY = 'Secondary',
+}
